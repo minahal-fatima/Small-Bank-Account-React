@@ -1,0 +1,66 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.account-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  color: #00445e;
+  margin-bottom: 20px;
+}
+
+.account-details {
+  margin-bottom: 20px;
+}
+
+.account-details p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group button {
+  background-color: #00445e;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:disabled {
+  background-color: #b0bec5;
+  cursor: not-allowed;
+}
+
+.button-group button:hover:not(:disabled) {
+  background-color: #00637f;
+}
+
+.button-group button:active {
+  background-color: #003649;
+}
